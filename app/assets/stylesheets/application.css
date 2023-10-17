@@ -13,3 +13,71 @@
  *= require_tree .
  *= require_self
  */
+
+.contentB>p {
+    padding: 10px;
+    border-top: 2px solid #EEEEEE;
+}
+
+.tweet {
+    float: right;
+    width: 65%;
+    flex-direction: column;
+}
+
+.contentB {
+    border-left: 2px solid #EEEEEE;
+    padding: 10px;
+}
+
+.contentA>p {
+    float: left;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.contentA {
+    padding-bottom: 30px;
+    border-left: 2px solid #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.menu {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.button1 {
+    width: 30%;
+    height: 50px;
+    background-color: #EEEEEE;
+    border-radius:30px;
+    border: none;
+}
+
+.button2 {
+    width: 50%;
+    height: 50px;
+    color: white;
+    background-color: #0099FF;
+    border-radius:30px;
+    font-weight: bold;
+    border: none;
+}
+
+.new, .edit {
+    float: right;
+    width: 65%;
+}
+
+.twitter_icon {
+    width: 60px;
+}
+
+.user_icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px; 
+    object-fit: cover;
+}

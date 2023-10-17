@@ -1,0 +1,12 @@
+<div class="menu">
+<%= image_tag 'twitter.jpg', class: "twitter_icon" %>
+<%= button_to 'ホーム', root_path, {method: :get, class: "button1"} %>
+<p>話題を検索</p>
+<p>通知</p>
+<p>メッセージ</p>
+<p>ブックマーク</p>
+<p>リスト</p>
+<p>プロフィール</p>
+<p>もっと見る</p>
+<%= button_to 'ツイートする', new_tweet_path, {method: :get, class: "button2"} %>
+</div>

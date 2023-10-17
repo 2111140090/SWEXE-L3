@@ -2,14 +2,30 @@
     <%= flash[:notice] %>
 <% end %>
 
+<div class="tweet">
+
+<div class="contentA">
+<p>ツイート</p>
+<p>ツイートと返信</p>
+<p>メディア</p>
+<p>いいね</p><br>
+</div>    
+
+<div class="contentB">
 <% @tweets.each do |e| %>
     <p>
+        <%= image_tag 'user.jpg', class: "user_icon" %>
+        kameo<br>
         <%= e.message %>
         <%= ((Time.current - e.tdate)/60).to_i %>分
-        <%=link_to '削除', "/tweets/#{e.id}", data: { turbo_method: :delete } %>
-        <%=link_to '表示', "/tweets/#{e.id}" %>
-        <%=link_to '編集', "/tweets/#{e.id}/edit" %>
+        <%=link_to '削除', tweet_path(e), data: { turbo_method: :delete } %>
+        <%=link_to '表示', tweet_path(e) %>
+        <%=link_to '編集', edit_tweet_path(e) %>
     </p>
 <% end %>
+</div>
 
-<%= link_to '新規追加', 'tweets/new' %>
+</div>
+
+
+
